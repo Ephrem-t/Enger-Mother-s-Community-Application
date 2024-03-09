@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         bottomNavigation.add(new MeowBottomNavigation.Model(1, R.drawable.baseline_home_24));
         bottomNavigation.add(new MeowBottomNavigation.Model(2, R.drawable.baseline_search_24));
         bottomNavigation.add(new MeowBottomNavigation.Model(3, R.drawable.baseline_add_24));
-        bottomNavigation.add(new MeowBottomNavigation.Model(4, R.drawable.baseline_chat_24));
+        bottomNavigation.add(new MeowBottomNavigation.Model(4, R.drawable.baseline_collections_24));
         bottomNavigation.add(new MeowBottomNavigation.Model(5, R.drawable.baseline_person_24));
 
         meownavigation();
