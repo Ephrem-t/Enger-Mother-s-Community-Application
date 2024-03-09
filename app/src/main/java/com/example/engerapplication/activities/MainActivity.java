@@ -1,4 +1,4 @@
-package com.example.engerapplication;
+package com.example.engerapplication.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
@@ -6,10 +6,10 @@ import androidx.fragment.app.FragmentTransaction;
 
 import android.graphics.Color;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.RelativeLayout;
 
 import com.etebarian.meowbottomnavigation.MeowBottomNavigation;
+import com.example.engerapplication.R;
 
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;

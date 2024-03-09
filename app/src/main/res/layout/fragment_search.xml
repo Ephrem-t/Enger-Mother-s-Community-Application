@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="#0C50FB"
 
-    tools:context=".SearchFragment">
+    tools:context=".activities.SearchFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
