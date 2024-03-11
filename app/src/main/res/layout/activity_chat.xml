@@ -4,47 +4,153 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.ChatActivity"
-    android:background="#0C50FB">
-
-
-
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/chat_toolbar"
+    android:animateLayoutChanges="true"
+    android:background="@color/background"
+    tools:context=".activities.ChatActivity">
+    <View
+        android:id="@+id/viewBackground"
         android:layout_width="match_parent"
-        android:layout_height="55dp"
-        android:background="#FFFFFFFF"
-        android:layout_alignParentTop="true" >
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:background="@drawable/background_content_top"
+        app:layout_constraintBottom_toTopOf="@id/layoutSend"
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
-        <!--  the text "Enger" in  the Toolbar -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Message"
-            android:textStyle="italic"
-            android:textSize="20sp"
-            android:textColor="#000000"
-            android:layout_gravity="center_horizontal"/>
-
-
-
+    <View
+        android:id="@+id/toolbarView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/viewSupporter"/>
 
 
-        <!-- back icon to the right of the Toolbar -->
-        <ImageView
-            android:id="@+id/back_icon"
-            android:layout_width="23dp"
-            android:layout_height="23dp"
-            android:src="@drawable/backs"
-            android:layout_gravity="left"
-            android:layout_marginEnd="16dp"
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/backImage"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:padding="@dimen/_5sdp"
+        android:src="@drawable/back_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/white"
+        />
 
-            >
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageInfo"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:padding="@dimen/_4sdp"
+        android:src="@drawable/info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/white"
+        />
 
-        </ImageView>
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/backImage"
+        app:layout_constraintEnd_toStartOf="@id/imageInfo"
+        app:layout_constraintStart_toEndOf="@id/backImage"
+        app:layout_constraintTop_toTopOf="@id/backImage"/>
+
+    <View
+        android:id="@+id/viewSupporter"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/background"
+        android:layout_marginTop="@dimen/_2sdp"
+        app:layout_constraintTop_toBottomOf="@id/backImage"
+
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:overScrollMode="never"
+        android:padding="@dimen/_20sdp"
+        app:stackFromEnd="true"
+        android:visibility="gone"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="@id/viewBackground"
+        app:layout_constraintTop_toBottomOf="@id/viewSupporter"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        app:layout_constraintBottom_toBottomOf="@id/viewBackground"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:outlineAmbientShadowColor="@color/black"
+
+        />
+
+    <FrameLayout
+        android:id="@+id/layoutSend"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_12ssp"
+        android:background="@drawable/backgrount_chat_input"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_marginLeft="@dimen/_4sdp"
+            android:padding="@dimen/_8sdp"
+            android:src="@drawable/send"
+            app:tint="@color/white"
+            />
+
+    </FrameLayout>
+    <EditText
+        android:id="@+id/inputChat"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_12ssp"
+        android:background="@drawable/backgrount_chat_input"
+        android:hint="@string/message"
+        android:imeOptions="actionSend"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:paddingStart="@dimen/_16sdp"
+        android:paddingEnd="@dimen/_16sdp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/textPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/layoutSend"
+        app:layout_constraintStart_toStartOf="parent"
+        />
 
 
-    </androidx.appcompat.widget.Toolbar>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

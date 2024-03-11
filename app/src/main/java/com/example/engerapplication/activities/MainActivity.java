@@ -10,6 +10,11 @@ import android.widget.RelativeLayout;
 
 import com.etebarian.meowbottomnavigation.MeowBottomNavigation;
 import com.example.engerapplication.R;
+import com.example.engerapplication.fragment.AddFragment;
+import com.example.engerapplication.fragment.ChatFragment;
+import com.example.engerapplication.fragment.HomeFragment;
+import com.example.engerapplication.fragment.ProfileFragment;
+import com.example.engerapplication.fragment.SearchFragment;
 
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;

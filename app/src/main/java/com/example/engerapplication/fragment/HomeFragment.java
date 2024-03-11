@@ -1,4 +1,4 @@
-package com.example.engerapplication.activities;
+package com.example.engerapplication.fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,7 +10,8 @@ import android.widget.ImageView;
 import androidx.fragment.app.Fragment;
 
 import com.example.engerapplication.R;
-import com.example.engerapplication.activities.ChatActivity;
+import com.example.engerapplication.activities.RecentUserActivity;
+import com.example.engerapplication.activities.notificationActivity;
 
 public class HomeFragment extends Fragment {
 
@@ -45,7 +46,7 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 // Start the ChatActivity
-                startActivity(new Intent(getActivity(), ChatActivity.class));
+                startActivity(new Intent(getActivity(), RecentUserActivity.class));
             }
 
         });
