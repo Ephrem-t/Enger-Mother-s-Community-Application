@@ -18,7 +18,6 @@
         <activity
             android:name=".activities.MainActivity"
             android:exported="false">
-            =
         </activity>
         <activity
             android:name=".SignUpActivity"
