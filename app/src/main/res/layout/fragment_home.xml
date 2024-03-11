@@ -9,7 +9,7 @@
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="55dp"
         android:background="#FFFFFFFF"
         android:layout_alignParentTop="true" >
 
@@ -17,32 +17,41 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/enger"
+            android:text="Enger Community"
             android:textStyle="italic"
             android:textSize="20sp"
             android:textColor="#000000"
             android:layout_gravity="left"/>
-        <!-- drop down icon to the right of the Toolbar -->
-        <ImageView
-            android:id="@+id/drop_down"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/baseline_arrow_drop_down_24"
-            android:layout_marginEnd="16dp"></ImageView>
 
 
-        <!-- notification icon to the right of the Toolbar -->
+
+        <!-- message icon to the right of the Toolbar -->
         <ImageView
-            android:id="@+id/notif_icon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/baseline_notifications_24"
+            android:id="@+id/message_icon"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:src="@drawable/chat"
             android:layout_gravity="right"
             android:layout_marginEnd="16dp"
 
             >
 
         </ImageView>
+
+        <!-- like icon to the right of the Toolbar -->
+        <ImageView
+            android:id="@+id/like_icon"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:src="@drawable/like"
+            android:layout_gravity="right"
+            android:layout_marginEnd="16dp"
+
+            >
+
+        </ImageView>
+
+
 
 
 

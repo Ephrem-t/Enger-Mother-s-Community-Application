@@ -35,11 +35,11 @@ public class MainActivity extends AppCompatActivity {
 
         bottomNavigation.show(1, true);// This is for default layout
 
-        bottomNavigation.add(new MeowBottomNavigation.Model(1, R.drawable.baseline_home_24));
-        bottomNavigation.add(new MeowBottomNavigation.Model(2, R.drawable.baseline_search_24));
-        bottomNavigation.add(new MeowBottomNavigation.Model(3, R.drawable.baseline_add_24));
-        bottomNavigation.add(new MeowBottomNavigation.Model(4, R.drawable.baseline_chat_24));
-        bottomNavigation.add(new MeowBottomNavigation.Model(5, R.drawable.baseline_person_24));
+        bottomNavigation.add(new MeowBottomNavigation.Model(1, R.drawable.home));
+        bottomNavigation.add(new MeowBottomNavigation.Model(2, R.drawable.search));
+        bottomNavigation.add(new MeowBottomNavigation.Model(3, R.drawable.add));
+        bottomNavigation.add(new MeowBottomNavigation.Model(4, R.drawable.health));
+        bottomNavigation.add(new MeowBottomNavigation.Model(5, R.drawable.user));
 
         meownavigation();
         main_layout.setBackgroundColor(Color.parseColor("#FF5722"));
