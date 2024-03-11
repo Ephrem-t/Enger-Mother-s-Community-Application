@@ -13,10 +13,7 @@
         android:theme="@style/Theme.EngerApplication"
         tools:targetApi="31">
         <activity
-            android:name=".activities.notificationActivity"
-            android:exported="false" />
-        <activity
-            android:name=".activities.ChatActivity"
+            android:name=".activities.CheckActivity"
             android:exported="false" />
         <activity
             android:name=".activities.MainActivity"
@@ -29,6 +26,15 @@
         </activity>
         <activity
             android:name=".SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.UserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.notificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ChatActivity"
             android:exported="false" />
     </application>
 
