@@ -1,4 +1,4 @@
-package com.example.engerapplication;
+package com.example.engerapplication.activities;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -15,12 +15,10 @@ import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.engerapplication.activities.MainActivity;
 import com.example.engerapplication.databinding.ActivitySignUpBinding;
 import com.example.engerapplication.utilities.Constants;
 import com.example.engerapplication.utilities.PreferenceManager;
 import com.google.firebase.firestore.FirebaseFirestore;
-
 
 import java.io.ByteArrayOutputStream;
 import java.io.FileNotFoundException;
@@ -43,9 +41,9 @@ public class SignUpActivity extends AppCompatActivity {
 
     private void setListener()
     {
-//        binding.haveAccount.setOnClickListener(v -> {
-//            startActivity(new Intent(getApplicationContext(), SignInActivity.class));
-//        });
+        binding.haveAccount.setOnClickListener(v -> {
+            startActivity(new Intent(getApplicationContext(), SignInActivity.class));
+        });
         binding.signUp.setOnClickListener(v -> {
             if (validateSignUpDetails()) {
                 signUp();

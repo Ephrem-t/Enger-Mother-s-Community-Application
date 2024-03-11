@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "581158057261",
+    "project_id": "chatingapplication-e3775",
+    "storage_bucket": "chatingapplication-e3775.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:581158057261:android:5f33840cd10fbf946d4fa4",
+        "android_client_info": {
+          "package_name": "com.example.babycare"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVWaNUueeMyow7kypzOP2Fs0engqawwDs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:581158057261:android:a19e68b1b7d2979f6d4fa4",
+        "android_client_info": {
+          "package_name": "com.example.engerapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVWaNUueeMyow7kypzOP2Fs0engqawwDs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
