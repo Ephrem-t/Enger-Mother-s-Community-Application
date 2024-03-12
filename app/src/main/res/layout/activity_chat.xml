@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:animateLayoutChanges="true"
-    android:background="@color/background"
+    android:background="@color/white"
     tools:context=".activities.ChatActivity">
     <View
         android:id="@+id/viewBackground"
@@ -21,7 +21,7 @@
         android:id="@+id/toolbarView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="@color/background"
+        android:background="@color/white"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@id/viewSupporter"/>
 
@@ -37,7 +37,7 @@
         android:src="@drawable/back_image"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:tint="@color/white"
+        app:tint="@color/black"
         />
 
     <androidx.appcompat.widget.AppCompatImageView
@@ -51,7 +51,7 @@
         android:src="@drawable/info"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:tint="@color/white"
+        app:tint="@color/black"
         />
 
     <TextView
@@ -63,7 +63,7 @@
         android:ellipsize="end"
         android:gravity="center"
         android:maxLines="1"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="@dimen/_14ssp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@id/backImage"
@@ -75,7 +75,7 @@
         android:id="@+id/viewSupporter"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/background"
+        android:background="@color/white"
         android:layout_marginTop="@dimen/_2sdp"
         app:layout_constraintTop_toBottomOf="@id/backImage"
 
@@ -145,7 +145,7 @@
         android:paddingStart="@dimen/_16sdp"
         android:paddingEnd="@dimen/_16sdp"
         android:textColor="@color/white"
-        android:textColorHint="@color/textPrimary"
+        android:textColorHint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/layoutSend"
         app:layout_constraintStart_toStartOf="parent"

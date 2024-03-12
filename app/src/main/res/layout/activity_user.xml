@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:animateLayoutChanges="true"
-    android:background="@color/black"
+    android:background="@color/white"
     tools:context=".activities.UserActivity">
 
     <androidx.appcompat.widget.AppCompatImageView
@@ -15,19 +15,19 @@
         android:layout_marginStart="@dimen/_16sdp"
         android:layout_marginLeft="@dimen/_16sdp"
         android:layout_marginTop="@dimen/_12sdp"
-        android:background="@drawable/background_icon"
+
         android:src="@drawable/back_image"
         app:srcCompat="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:tint="@color/white"
+        app:tint="@color/black"
         />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Select User"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="@dimen/_14ssp"
         android:layout_marginStart="@dimen/_16sdp"
         app:layout_constraintBottom_toBottomOf="@id/imageBack"
@@ -40,7 +40,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="@dimen/_16sdp"
-        android:background="@drawable/backgroun_content_bottom"
+        android:background="@drawable/background_content_top"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/imageBack"
         >

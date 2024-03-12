@@ -12,7 +12,8 @@
         android:id="@+id/framelayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/bottomNavigation"/>
+        android:layout_above="@+id/bottomNavigation"
+        android:background="@color/background_Icon"/>
 
     <com.etebarian.meowbottomnavigation.MeowBottomNavigation
         android:id="@+id/bottomNavigation"

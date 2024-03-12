@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:animateLayoutChanges="true"
-    android:background="@color/background"
+    android:background="@color/white"
     tools:context=".activities.RecentUserActivity">
 
 
@@ -16,7 +16,7 @@
         android:layout_marginStart="@dimen/_16sdp"
         android:layout_marginLeft="@dimen/_16sdp"
         android:layout_marginTop="@dimen/_12sdp"
-        android:background="@drawable/background_icon"
+        android:background="@drawable/background_image"
         android:scaleType="centerCrop"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -31,11 +31,11 @@
         android:layout_marginEnd="@dimen/_16sdp"
         android:layout_marginRight="@dimen/_16sdp"
         android:src="@drawable/power"
-        android:background="@drawable/background_icon"
+        android:background="@drawable/background_image"
         android:padding="@dimen/_6sdp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:tint="@color/white"
+        app:tint="@color/black"
         />
 
     <TextView
@@ -47,7 +47,7 @@
         android:ellipsize="end"
         android:gravity="center"
         android:maxLines="1"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="@dimen/_14ssp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/imageProfile"
@@ -60,7 +60,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="@dimen/_16sdp"
-        android:background="@drawable/backgroun_content_bottom"
+        android:background="@drawable/background_content_top"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textName"
         >
@@ -77,7 +77,7 @@
         android:layout_marginBottom="@dimen/_16sdp"
         android:contentDescription="@string/app_name"
         android:src="@drawable/add"
-        android:backgroundTint="@color/background_Icon"
+        android:backgroundTint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:tint="@color/white"
